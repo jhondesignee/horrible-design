@@ -2,6 +2,9 @@ import { defineConfig } from "vite"
 
 const repositoryName = process.env.GITHUB_REPOSITORY?.slice("/")[1]
 
+console.log(JSON.stringify(process.env))
+console.log(repositoryName)
+
 export default defineConfig({
   base: repositoryName ?? "/",
   server: {
